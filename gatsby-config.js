@@ -1,7 +1,7 @@
 module.exports = {
     siteMetadata: {
-      title: `new`,
-        siteUrl: `https://www.yourdomain.tld`,
+      title: `Sales Chasers`,
+        siteUrl: `https://www.saleschasers.com`,
     },
     plugins: [
       `gatsby-transformer-sharp`,
