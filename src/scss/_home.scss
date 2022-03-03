@@ -1,0 +1,146 @@
+$blue: #1e8ac7;
+$h-color: #101010;
+$p-color: $h-color;
+@font-face {
+	font-family: 'OpenSansRegular';
+	src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+		 url('../fonts/OpenSans-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: 'OpenSansBold';
+	src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+		 url('../fonts/OpenSans-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+@media(min-width: 768px) {
+	.section-wrap {
+		display: block;
+		clear: both;
+		float: none;
+	}
+	.inner {
+		display: block;
+		clear: both;
+		float: none;
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+}
+@media (max-width: 768px) {
+	.inner {
+		margin: 0 15px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
+.top-nav {
+	background: $blue;
+	font-family: 'OpenSansRegular';
+	font-size: 16px;
+	line-height: 21px;
+	letter-spacing: 1;
+	padding: 15px 0;
+	ul {
+		@media screen and (min-width: 768px) {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: flex-end;
+		}
+		@media screen and (max-width: 768px) {
+			display: flex;
+			flex-flow: row nowrap;
+			justify-content: center;
+		}
+		li {
+			color: #fff;
+			a {
+				color: #fff;
+				text-decoration: none !important;
+				transition: all 0.5s ease;
+				&:hover {
+					color: rgba(255,255,255,.7);
+				}
+			}
+			&.divider {
+				margin: 0 10px;
+			}
+		}
+	}
+}
+h1.heading {
+	font-family: 'OpenSansBold';
+	text-transform: uppercase;
+	color: $h-color;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	font-size: 48px;
+	line-height: 55px;
+	@media screen and (min-width: 768px) {
+
+	}
+	@media screen and (max-width: 768px) {
+		
+	}
+}
+.image-text {
+	font-family: 'OpenSansRegular';
+	color: $p-color;
+	font-size: 16px;
+	line-height: 29px;
+	letter-spacing: 1;
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	@media screen and (max-width: 768px) {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+		padding-bottom: 50px;
+	}
+	.image {
+		width: 153px;
+		height: 151px;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		@media screen and (min-width: 768px) {
+			
+		}
+		@media screen and (max-width: 768px) {
+			margin-bottom: 25px;
+		}
+		.headshot {
+
+		}
+	}
+	.text {
+		@media screen and (min-width: 768px) {
+			padding-left: 50px;
+		}
+		@media screen and (max-width: 768px) {
+			text-align: center;
+		}
+		a {
+			color: $p-color;
+			text-decoration: none !important;
+			transition: all 0.5s ease;
+			font-family: 'OpenSansBold';
+			&:hover {
+				color: $blue;
+			}
+		}
+	}
+}
